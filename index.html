@@ -119,48 +119,168 @@
         height: auto;
         margin-left: 30px;
     }
-    .box{
-        width:50%;
-        margin:auto;
-        background-color:rgba(255, 255, 255, 1);
-       
+
+    .box {
+        width: 50%;
+        margin: auto;
+        background-color: rgba(255, 255, 255, 1);
+
     }
-    .explore{
-        display:flex;
+
+    .explore {
+        display: flex;
         justify-content: space-around;
         align-items: center;
-        padding:0.9rem 0.3rem;
+        padding: 0.9rem 0.3rem;
         margin-bottom: 4rem;
     }
-    .location{
+
+    .location {
         display: flex;
         flex-direction: column;
-        gap:0.5rem
+        gap: 0.5rem
     }
-    .seperate{
+
+    .seperate {
         display: flex;
         flex-direction: row;
         align-items: center;
-        gap:4px;
-        font-family:"Poppins", serif;
+        gap: 4px;
+        font-family: "Poppins", serif;
         font-size: 0.9rem;
     }
-   
-    .location p{
+
+    .location p {
         font-size: 0.8rem;
         color: rgba(102, 102, 102, 1);
     }
-    .seperate img{
-        width:9%;
-        height:9px;
+
+    .seperate img {
+        width: 9%;
+        height: 9px;
     }
-    .explore-btn{
-        padding:0.7rem 1rem;
-        font-family:"Poppins", serif;
+
+    .explore-btn {
+        padding: 0.7rem 1rem;
+        font-family: "Poppins", serif;
     }
-    .part-2{
+
+    .part-2 {
         background-color: rgba(247, 248, 252, 1);
-        
+
+    }
+
+    .main {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding-top: 3rem;
+        margin-left: 2.5rem;
+
+
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        width: 29%;
+        text-align: center;
+        margin-bottom: 1rem;
+
+    }
+
+    .content h1 {
+        font-size: 2rem;
+        font-family: "Volkhov", serif;
+        color: rgba(34, 34, 34, 1);
+        margin-bottom: 0.5rem;
+
+    }
+
+    .content p {
+        font-size: 0.8em;
+        color: rgba(102, 102, 102, 1);
+        font-family: "Poppins", serif;
+    }
+
+    .Aeroplane img {
+        width: 60%;
+        height: 60%;
+    }
+
+    .parent-card {
+
+        width: 80%;
+        margin: auto;
+
+    }
+
+    .child-card {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1em;
+
+    }
+
+    .card {
+        width: 18%;
+        height: auto;
+        background-color: rgba(255, 255, 255, 1);
+        padding: 2rem;
+        margin-bottom: 4rem;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 4px;
+
+    }
+
+    .card img {
+        width: 17%;
+        height: 17%;
+        margin-bottom: 1.4rem;
+    }
+
+
+    .card h1 {
+        font-family: "Poppins", serif;
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+
+    }
+
+    .card p {
+        font-size: 0.6rem;
+        font-family: "Poppins", serif;
+        color: rgba(102, 102, 102, 1);
+        line-height: 1rem;
+    }
+
+    .discounts {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        margin-top: 2rem;
+
+    }
+
+    .discounts h1 {
+        font-family: "Volkhov", serif;
+        font-size: 2rem;
+        margin-bottom: 0.6rem;
+    }
+
+    .discounts p {
+        font-size: 0.8rem;
+        text-align: center;
+        font-family: "Poppins", serif;
+        color: rgba(102, 102, 102, 1);
+        line-height: 1.4rem;
     }
 </style>
 
@@ -222,17 +342,74 @@
             <button class="explore-btn">Explore Now</button>
         </div>
     </section>
-<section class="part-2">
- <div class="main">
-    <article>
-     <h1>Things you need to do</h1>
-     <p> We ensure that you’ll embark on a perfectly planned, safe vacation at a price you can afford. </p>.
+    <section class="part-2">
+        <div class="main">
+            <article class="content">
+                <h1>Things you need <span class="orange">to do</span></h1>
+                <p> We ensure that you’ll embark on a perfectly planned, <br>safe vacation at a price you can afford.
+                </p>.
 
-    </article>
-    <img src="./assets/Aeroplane.png">
+            </article>
+            <div class="Aeroplane">
+                <img src="./assets/Aeroplane.png">
+            </div>
+        </div>
+        <!-- card -->
+        <article class="parent-card">
+            <div class="child-card">
+                <div class="card">
+                    <img src="./assets/Group (1).png">
+                    <h1>Sign Up</h1>
+                    <p>Completes all the work associated with planning and processing</p>
+                </div>
+                <div class="card">
+                    <img src="./assets/Group (2).png">
+                    <h1>Worth of Money</h1>
+                    <p>After successful access then book from exclusive deals & pricing</p>
+                </div>
+                <div class="card">
+                    <img src="./assets/Group (3).png">
+                    <h1>Exciting Travel
+                    </h1>
+                    <p>Start and explore a wide range of exciting travel experience.</p>
+                </div>
+            </div>
+        </article>
+    </section>
+    <!-- deals & discounts -->
+    <section>
+        <div class="discounts">
+            <h1>Exclusive <span class="orange">deals & discounts</span></h1>
+            <p>Discover our fantastic early booking discounts
+                <br> & start planning your journey.
+            </p>
+        </div>
+        <article>
+            <!-- four-cards-->
+        </article>
+        <div class="main-card">
+            <img src="./assets/Madrid.png">
+            <div class="subcard-1">
+                <h3>Madrid</h3>
+                <div class="star">
+                    <img src="./assets/star.png">
+                    <p>4.B</p>
+                </div>
+            </div>
 
-   
-</section>
+            <div class="subcard-2">
+                <div class="spain">
+                    <img src="./assets/map.png">
+                    <h3>spain</h3>
+                </div>
+                <div class="dollar">
+                    <h2 >$850<h2>
+                        <p>$950</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
 
 </body>
 
