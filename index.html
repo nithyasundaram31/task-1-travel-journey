@@ -1,141 +1,239 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
-    rel="stylesheet">
+        rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Volkhov:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <style>
-    *{
-        margin:0;
-        padding:0;
+    * {
+        margin: 0;
+        padding: 0;
     }
-    body{
 
-     background-color:rgba(254, 252, 251, 1);
-     margin:0 auto;
+    body {
+
+        background-color: rgba(254, 252, 251, 1);
+        margin: 0 auto;
 
     }
-    header{
-        display:flex;
+
+    header {
+        display: flex;
         justify-content: space-evenly;
         align-items: center;
-        padding:1rem;
-        margin-bottom:2rem;
+        padding: 1rem;
+        margin-bottom: 2rem;
     }
-    .logo{
-       display: flex;
-       gap:7px;
-       }
-     nav{
-       display: flex;
-       gap:15px;
-     }
-     nav a{
-        font-size:10px;
-        font-family:  "Poppins", serif;
-        color:rgba(34, 34, 34, 1) ;
-     }
-     
-     .login{
-      display: flex;
-      align-items: center;
-      gap:1.5rem;
-     }
-     .login a{
+
+    .logo {
+        display: flex;
+        gap: 7px;
+    }
+
+    nav {
+        display: flex;
+        gap: 15px;
+    }
+
+    nav a {
+        font-size: 10px;
+        font-family: "Poppins", serif;
+        color: rgba(34, 34, 34, 1);
+    }
+
+    .login {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .login a {
         text-decoration: none;
-        color:rgba(253, 141, 58, 1);
-        font-size:11px ;
-        font-family:  "Poppins", serif;
-     }
-     button{
-        padding:0.5rem 1.5rem;
+        color: rgba(253, 141, 58, 1);
+        font-size: 11px;
+        font-family: "Poppins", serif;
+    }
+
+    button {
+        padding: 0.5rem 1.5rem;
         background-color: rgba(250, 116, 54, 1);
         color: rgba(255, 255, 255, 1);
         border: none;
-        font-size:11px;
+        font-size: 11px;
         border-radius: 3px;
         flex-wrap: wrap;
-     }
-    .container{
-
-        display:flex;
-       flex-direction: row;
-       width:70%;
-       margin:auto;
-     
     }
-    .sub-container{
-        width:60%;
+
+    .container {
+
+        display: flex;
+        flex-direction: row;
+        width: 70%;
+        margin: auto;
+        margin-bottom: 2rem;
+
+    }
+
+    .sub-container {
+        width: 60%;
         margin-top: 30px;
         margin-left: 20px;
-      
+
     }
-    .sub-container h1{
-        font-size:2.7rem;
-        margin-bottom:0.5em;
+
+    .sub-container h1 {
+        font-size: 2.7rem;
+        margin-bottom: 0.5em;
         font-family: "Volkhov", serif;
     }
-    .orange{
-        color:rgba(250, 116, 54, 1);
+
+    .orange {
+        color: rgba(250, 116, 54, 1);
     }
-    .sub-container p{
-        color:rgba(102, 102, 102, 1);
-        line-height:1.6rem;
-        font-family:"Poppins", serif;
-        font-size:0.9rem;
-        margin-bottom:3rem;
+
+    .sub-container p {
+        color: rgba(102, 102, 102, 1);
+        line-height: 1.6rem;
+        font-family: "Poppins", serif;
+        font-size: 0.9rem;
+        margin-bottom: 3rem;
     }
-    .sub-container button{
-        padding:0.8rem 1.5rem;
+
+    .sub-container button {
+        padding: 0.8rem 1.5rem;
         background-color: rgba(255, 255, 255, 1);
         color: rgba(250, 116, 54, 1);
-        border: 1px solid  rgba(250, 116, 54, 1);
+        border: 1px solid rgba(250, 116, 54, 1);
         border-radius: 3px;
-        font-family:"Poppins", serif;
+        font-family: "Poppins", serif;
         flex-wrap: wrap;
-     }
-    .image img{
-        width:90%;
-        height:auto;
-        margin-left:30px;
+    }
+
+    .image img {
+        width: 90%;
+        height: auto;
+        margin-left: 30px;
+    }
+    .box{
+        width:50%;
+        margin:auto;
+        background-color:rgba(255, 255, 255, 1);
+       
+    }
+    .explore{
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+        padding:0.9rem 0.3rem;
+        margin-bottom: 4rem;
+    }
+    .location{
+        display: flex;
+        flex-direction: column;
+        gap:0.5rem
+    }
+    .seperate{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap:4px;
+        font-family:"Poppins", serif;
+        font-size: 0.9rem;
+    }
+   
+    .location p{
+        font-size: 0.8rem;
+        color: rgba(102, 102, 102, 1);
+    }
+    .seperate img{
+        width:9%;
+        height:9px;
+    }
+    .explore-btn{
+        padding:0.7rem 1rem;
+        font-family:"Poppins", serif;
+    }
+    .part-2{
+        background-color: rgba(247, 248, 252, 1);
         
     }
 </style>
-<body>
- <header>
-  <div class="logo">
-   <h3>Trabook</h3><img src="./assets/trabook.png"/>
-</div>
-<nav>
-    <a>Home</a>
-    <a>About</a>
-    <a>Destination</a>
-    <a>Tour</a>
-    <a>Blog</a>
-</nav>
-<div class="login">
- <a href="">Login</a>
- <button>Sign up</button>
-<div>
- </header>
- <section class="container">
-  <article class="sub-container">
-    <h1>Get started your 
-        <br>exciting <span class="orange">journey</span><br>
-        with us.
-        </h1>
-    <p>A Team of experienced tourism professionals will provide you with the best advice and tips for your desire place. </p>
-   <button>Discover Now</button>
- </article>
- <article class="image">
- <img src="./assets/man.png">
- </article>
- 
 
- </section>
+<body>
+    <header>
+        <div class="logo">
+            <h3>Trabook</h3><img src="./assets/trabook.png" />
+        </div>
+        <nav>
+            <a>Home</a>
+            <a>About</a>
+            <a>Destination</a>
+            <a>Tour</a>
+            <a>Blog</a>
+        </nav>
+        <div class="login">
+            <a href="">Login</a>
+            <button>Sign up</button>
+            <div>
+    </header>
+    <section class="container">
+        <article class="sub-container">
+            <h1>Get started your
+                <br>exciting <span class="orange">journey</span><br>
+                with us.
+            </h1>
+            <p>A Team of experienced tourism professionals will provide you with the best advice and tips for your
+                desire place. </p>
+            <button>Discover Now</button>
+        </article>
+        <article class="image">
+            <img src="./assets/man.png">
+        </article>
+    </section>
+    <!-- Explore now -->
+    <section class="box">
+        <div class="explore">
+            <div class="location">
+                <div class="seperate">
+                    <h4>Location</h4>
+                    <img src="./assets/Vector.png">
+                </div>
+                <p>Where are you going</p>
+            </div>
+            <div class="location">
+                <div class="seperate">
+                    <h4>Date</h4>
+                    <img src="./assets/Vector.png">
+                </div>
+                <p>When you will go</p>
+            </div>
+            <div class="location">
+                <div class="seperate">
+                    <h4>Guest</h4>
+                    <img src="./assets/Vector.png">
+                </div>
+                <p>Number of guest</p>
+            </div>
+            <button class="explore-btn">Explore Now</button>
+        </div>
+    </section>
+<section class="part-2">
+ <div class="main">
+    <article>
+     <h1>Things you need to do</h1>
+     <p> We ensure that you’ll embark on a perfectly planned, safe vacation at a price you can afford. </p>.
+
+    </article>
+    <img src="./assets/Aeroplane.png">
+
+   
+</section>
+
 </body>
+
 </html>
