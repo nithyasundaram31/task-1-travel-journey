@@ -522,6 +522,7 @@
 .fifth-part{
     background-color:rgba(247, 248, 252, 1);
     padding:1rem;
+    position: relative;
 }
 .big-container{
     width:70%;
@@ -531,6 +532,8 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    margin-bottom: 3rem;
+    
 }
 .part-1{
     width:36%;
@@ -562,7 +565,7 @@
     margin-top:9rem;
 }
 .thomas{
-    /* position: relative; */
+    position: relative;
     max-width:250px;
     margin-top:3rem;
     background-color: rgba(255, 255, 255, 1);
@@ -618,17 +621,31 @@
     width:70%;
     height:75%;
 }
-.background-plane{
-  position:relative;
-}
+
 .plane-child{
     position:absolute;
-    /* left: 2rem; */
+    right:12rem;
+    bottom:14rem;
+   
 }
 .plane-child img{
-    width:30%;
-    height:30%;
+    width:60%;
+    height:60%;
 }
+.sixth-part{
+    width: 70%; 
+    margin: auto;
+}
+.sixth-part h1{
+    font-family: "Volkhov", serif;
+    text-align: center;
+    font-size:2rem;
+    padding: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+
 </style>
 <body>
     <header>
@@ -944,12 +961,25 @@
         <div class="mike-image">
             <img src="./assets/mike.png" alt="">
         </div>
-        <div class="background-plane">
-            <div class="plane-child">
-            <img src="./assets/plane.png" alt="">
-            </div>
-            </div>
+       
     </article>
+    <div class="background-plane">
+        <div class="plane-child">
+        <img src="./assets/plane.png" alt="">
+        </div>
+        </div>
+    </section>
+<!-- sixth-part -->
+    <section class="sixth-part">
+    
+     <h1>Get update with <span class="orange">latest blog</span></h1>
+     
+     <article class="parent-container">
+        <div class="child-container">
+
+
+        </div>
+     </article>
     </section>
 </body>
 </html>
